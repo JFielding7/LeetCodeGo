@@ -1,6 +1,9 @@
 package main
 
+import "fmt"
+
 func main() {
-	node := TreeNode{Left: nil, Right: nil, Val: 1}
-	maxPathSum(&node)
+	res := numOfWays(10000)
+	fmt.Println(res)
+	fmt.Println(x)
 }
