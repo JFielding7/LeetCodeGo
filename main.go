@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	res := numOfWays(10000)
-	fmt.Println(res)
-	fmt.Println(x)
+	req_skills := []string{"java", "nodejs", "reactjs"}
+	people := [][]string{{"java"}, {"nodejs"}, {"nodejs", "reactjs"}}
+	fmt.Println(smallestSufficientTeam(req_skills, people))
 }
