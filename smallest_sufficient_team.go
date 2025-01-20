@@ -66,6 +66,5 @@ func smallestSufficientTeam(reqSkills []string, people [][]string) []int {
 		}
 	}
 
-	fmt.Println(smallestTeams)
 	return getTeam(smallestTeams[numPeople][skillsCombos-1], smallestTeams, skillMasks, numPeople, skillsCombos-1)
 }
