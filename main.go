@@ -22,13 +22,21 @@ func randomArray(n, min, max int) []int {
 }
 
 func main() {
-	//nums := []int{41, 19, 76, 42, 21, 40, 38, 80, 65, 36, 33, 92, 64, 45, 31, 64, 74, 29, 78, 44}
-	//nums := []int{10000}
-	//fmt.Println(nums)
-	//indexDiff := 3
-	//valueDiff := 0
-	//fmt.Println(containsNearbyAlmostDuplicate(nums, indexDiff, valueDiff))
-	matrix := [][]int{{0, 1, 0}, {1, 1, 1}, {0, 1, 0}}
-	target := 0
-	fmt.Println(numSubmatrixSumTarget(matrix, target))
+	lfu := Constructor(2)
+	lfu.Put(1, 1)
+	lfu.print()
+	lfu.Put(2, 2)
+	lfu.print()
+	lfu.Get(1)
+	lfu.Put(3, 3)
+	lfu.print()
+	fmt.Println(lfu.Get(2))
+	lfu.Get(3)
+	lfu.print()
+	lfu.Put(4, 4)
+	lfu.print()
+	fmt.Println("Count", lfu.count)
+	fmt.Println(lfu.Get(1))
+	lfu.Get(3)
+	lfu.Get(4)
 }
